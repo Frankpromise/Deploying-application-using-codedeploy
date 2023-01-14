@@ -1,5 +1,8 @@
 # Deploying-application-using-codedeploy
 
+<img width="417" alt="image" src="https://user-images.githubusercontent.com/99150197/212492870-8b165a50-501f-4fd1-bd06-74211243f0c2.png">
+
+
 ### INTRODUCTION
 
 AWS CodeDeploy is a service provided by Amazon Web Services (AWS) that automates code deployments to servers. It allows developers to deploy code to various environments, such as test, staging, and production, with minimal downtime. CodeDeploy supports various languages and platforms, including Java, .NET, and PHP, and can deploy code to on-premises servers or servers in the cloud, including AWS EC2 and Lambda. 
