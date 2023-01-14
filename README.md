@@ -60,7 +60,7 @@ Navigate to your s3 and make sure read and write access is enabled on the bucket
 }
 ```
 
-#####Deploy application
+##### Deploy application
 
 Navigate to codedeploy in the aws console and click getting started.
 
@@ -75,19 +75,35 @@ compute platform: EC2/on-premises
 4. click create application
 
 5. On the next page, click create deployment group and set the following parameters:
+
 a. Deployment group name: mydeploymentg
+
 b. service role: click on iam role you created with codedeploy access
+
 c. Deployment type: in-place
+
 d. Envionment configuration: Amazon EC2 Instances
+
 Key: select name
+
 Value: prom-server(if you used my terraform template else use the tag for your ec2 instance).
+
 e. Deployment settings: select CodedeploymentDefault.AllAtOnce
+
 f. Load balancer: deselect the enable load balancing box
+
 h. click Create deployment group
+
 i. Click Create deployment
+
 j. Copy and paste the URI of your s3 bucket in Revision location
+
 3. Test deployment
+
 After application has been deployed, navigate to the public ip address of your instance and test it.
+
 your end result is this:
+
+<img width="928" alt="image" src="https://user-images.githubusercontent.com/99150197/212492440-407e2277-2a0c-4f13-a010-ab0b472ad14e.png">
 
 If you encounter any difficulties in making it work, drop a comment and i will try to help you.
